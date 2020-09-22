@@ -18,8 +18,8 @@ body {
 }
 
 #map {
-  height: 70vh;
-  padding: 185px 0;
+  height: 20vh;
+  padding: 385px 0 0 0;
   margin: auto;
 }
 
@@ -155,7 +155,7 @@ body {
 
 @media screen and (min-width: 900px) {
   #map {
-    height: 50vh;
+    height: 30vh;
   }
   .container {
     width: 100%;
