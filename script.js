@@ -74,7 +74,7 @@ submit.addEventListener("click", function () {
 
 // function to update the map based on the ip address passed
 function updateMap(ip) {
-  fetch(`https://geo.ipify.org/api/v1?apiKey=at_YrnLi3sYW05B0xX0GhEgkhjUU2FKi&ipAddress=${ip}`)
+  fetch(`https://geo.ipify.org/api/v1?apiKey=at_vbZGNjvlgEKKd75NM7KFT9Vo10KcY&ipAddress=${ip}`)
     .then(res => res.json())
     .then(jsonData => {
       geoData = jsonData;
