@@ -1,7 +1,7 @@
-let ipAddress = "192.212.147.101";
+let ipAddress = "";
 let geoData;
 const ipify = "https://api.ipify.org?format=json";
-const accessToken = "pk.eyJ1IjoiY3Nqb2UiLCJhIjoiY2tmY3IycGZ0MWlkejJycXNmMGNnMW56OCJ9.STWa3EjDrqaMyrKZ48_8Cg";
+const accessToken = "pk.eyJ1IjoiY3Nqb2UiLCJhIjoiY2tmZDltNDd4MW5kODJybXFiZmIwM254bSJ9.WRb_SdlK3qnAaxJnEIi4oQ";
 
 const ipRegex = /^\d{1,3}\.\d{1,3}\.\d{1,3}.\d{1,3}$/;
 let submit = document.getElementById("submit");
@@ -25,7 +25,7 @@ window.onload = function () {
     .then(res => res.json())
     .then(jsonData => {
       ipAddress = jsonData.ip;
-      fetch(`https://geo.ipify.org/api/v1?apiKey=at_YrnLi3sYW05B0xX0GhEgkhjUU2FKi&ipAddress=${ipAddress}`)
+      fetch(`https://geo.ipify.org/api/v1?apiKey=at_vbZGNjvlgEKKd75NM7KFT9Vo10KcY&ipAddress=${ipAddress}`)
         .then(res => res.json())
         .then(jsonData => {
           geoData = jsonData;
